@@ -13,9 +13,12 @@
 		6C1155482837A48200ADB3F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C1155462837A48200ADB3F7 /* Main.storyboard */; };
 		6C11554A2837A48300ADB3F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C1155492837A48300ADB3F7 /* Assets.xcassets */; };
 		6C11554D2837A48300ADB3F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C11554B2837A48300ADB3F7 /* LaunchScreen.storyboard */; };
+		6C1155552837BECB00ADB3F7 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1155542837BECB00ADB3F7 /* CallViewController.swift */; };
+		F5E732E573832F25C72504CA /* Pods_VonageTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EF140CAA391DB22667D13A /* Pods_VonageTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01EF140CAA391DB22667D13A /* Pods_VonageTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VonageTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C11553D2837A48200ADB3F7 /* VonageTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VonageTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C1155402837A48200ADB3F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C1155422837A48200ADB3F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		6C1155492837A48300ADB3F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C11554C2837A48300ADB3F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C11554E2837A48300ADB3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C1155542837BECB00ADB3F7 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		6F68F3B2B1A348A3D105A8DF /* Pods-VonageTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VonageTest.release.xcconfig"; path = "Target Support Files/Pods-VonageTest/Pods-VonageTest.release.xcconfig"; sourceTree = "<group>"; };
+		7AB0224C2BE491C48D909FCF /* Pods-VonageTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VonageTest.debug.xcconfig"; path = "Target Support Files/Pods-VonageTest/Pods-VonageTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5E732E573832F25C72504CA /* Pods_VonageTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				6C11553F2837A48200ADB3F7 /* VonageTest */,
 				6C11553E2837A48200ADB3F7 /* Products */,
+				BCA3DBA80ABCF2B01614BD86 /* Pods */,
+				A7E6C56C76C5D174FE4975BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +68,30 @@
 				6C1155402837A48200ADB3F7 /* AppDelegate.swift */,
 				6C1155422837A48200ADB3F7 /* SceneDelegate.swift */,
 				6C1155442837A48200ADB3F7 /* ViewController.swift */,
+				6C1155542837BECB00ADB3F7 /* CallViewController.swift */,
 				6C1155462837A48200ADB3F7 /* Main.storyboard */,
 				6C1155492837A48300ADB3F7 /* Assets.xcassets */,
 				6C11554B2837A48300ADB3F7 /* LaunchScreen.storyboard */,
 				6C11554E2837A48300ADB3F7 /* Info.plist */,
 			);
 			path = VonageTest;
+			sourceTree = "<group>";
+		};
+		A7E6C56C76C5D174FE4975BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01EF140CAA391DB22667D13A /* Pods_VonageTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCA3DBA80ABCF2B01614BD86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AB0224C2BE491C48D909FCF /* Pods-VonageTest.debug.xcconfig */,
+				6F68F3B2B1A348A3D105A8DF /* Pods-VonageTest.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +101,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C1155512837A48300ADB3F7 /* Build configuration list for PBXNativeTarget "VonageTest" */;
 			buildPhases = (
+				01A98106143CE431B0167936 /* [CP] Check Pods Manifest.lock */,
 				6C1155392837A48200ADB3F7 /* Sources */,
 				6C11553A2837A48200ADB3F7 /* Frameworks */,
 				6C11553B2837A48200ADB3F7 /* Resources */,
@@ -133,6 +161,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01A98106143CE431B0167936 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VonageTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6C1155392837A48200ADB3F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +193,7 @@
 			files = (
 				6C1155452837A48200ADB3F7 /* ViewController.swift in Sources */,
 				6C1155412837A48200ADB3F7 /* AppDelegate.swift in Sources */,
+				6C1155552837BECB00ADB3F7 /* CallViewController.swift in Sources */,
 				6C1155432837A48200ADB3F7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +336,7 @@
 		};
 		6C1155522837A48300ADB3F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AB0224C2BE491C48D909FCF /* Pods-VonageTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +365,7 @@
 		};
 		6C1155532837A48300ADB3F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F68F3B2B1A348A3D105A8DF /* Pods-VonageTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
