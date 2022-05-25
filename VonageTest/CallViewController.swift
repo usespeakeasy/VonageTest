@@ -18,7 +18,9 @@ class CallViewController: UIViewController {
     
     // MARK: - Private properties
     
-    private let token = "... add login token ..."
+    private let repository = Repository()
+    private let lessonId = "ES_L2_D1_M"
+    private let courseId = "ES_L2_M"
     
     private var client: NXMClient {
         return NXMClient.shared
@@ -48,8 +50,17 @@ class CallViewController: UIViewController {
 extension CallViewController {
     
     private func loginUser() {
-        client.setDelegate(self)
-        client.login(withAuthToken: token)
+        repository.fetchToken { token in
+            DispatchQueue.main.async {
+                if let token = token {
+                    self.client.setDelegate(self)
+                    self.client.login(withAuthToken: token)
+                } else {
+                    print("Unable to fetch token.")
+                    self.dismiss(animated: true)
+                }
+            }
+        }
     }
     
     private func requestPermissions() {
@@ -74,7 +85,9 @@ extension CallViewController {
     }
     
     private func startCall() {
-        client.serverCall(withCallee: "", customData: nil) { error, call in
+        let customData: [String: Any] = ["lessonId": lessonId, "courseId": courseId]
+        print("Starting call lessonId: \(lessonId), courseId: \(courseId) with custom data: \(customData).")
+        client.serverCall(withCallee: "jeNuwovVqFM2jpLLy8pcpdWh1eP2", customData: customData) { error, call in
             if let error = error {
                 print("❌ Start call error: \(error)")
             } else {
